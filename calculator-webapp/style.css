@@ -1,0 +1,136 @@
+/* Base reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Body styling */
+  body {
+    background: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Calculator container */
+  .calculator {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Display input */
+  .display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  /* Keypad grid */
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  button.operator {
+    background-color: #ffd700;
+    border-color: #ffc107;
+  }
+  
+  #calculate {
+    background-color: #00b894;
+    color: white;
+    grid-column: span 2;
+  }
+  
+  #clear {
+    background-color: #d63031;
+    color: white;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Dark mode styles (already added earlier) */
+  body.dark {
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  body.dark .calculator {
+    background-color: #333;
+    box-shadow: 0 0 10px #00f2ff;
+  }
+  
+  body.dark button {
+    background-color: #444;
+    color: #0ff;
+    border-color: #0ff;
+  }
+  
+  #toggle-theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 500px) {
+    .calculator {
+      padding: 15px;
+    }
+  
+    .display {
+      font-size: 1.5rem;
+      height: 50px;
+    }
+  
+    button {
+      padding: 15px;
+      font-size: 1.2rem;
+    }
+  
+    #toggle-theme {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+  
