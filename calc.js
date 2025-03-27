@@ -47,7 +47,7 @@ rl.question("Enter the first number: ", function (num1) {
           return;
       }
 
-      console.log(`✅ Result: ${result}`);
+      console.log(`✅Your Result is: ${result}`);
       rl.close();
     });
   });
