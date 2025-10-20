@@ -75,4 +75,12 @@ const user1 = {
 }
 
 const {name, age} = user1;
+console.log(user1);
 console.log(`Name: ${name}, Age: ${age}`);
+
+
+//spread operator
+const updatedUser = { ...user1, age: 21, city: 'nairobi', proffession: 'developer' };
+console.log(updatedUser);
+console.log(updatedUser.proffession)
+
