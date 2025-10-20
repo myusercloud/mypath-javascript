@@ -113,3 +113,5 @@ if(users[0].age >= 18){
     console.log(`no age input`);
 }
 
+//functions
+
