@@ -98,3 +98,18 @@ console.log("c Strict not equal to d:", c !== d);
 
 //conditional statements
 
+// #1 If Else statement
+const users = [
+    {name: "alfred", age: 21},
+    {name: "brenda", age: 17},
+    {name: "charles", age: 18}
+]
+
+if(users[0].age >= 18){
+    console.log(`${users[0].name} is an adult.`);
+} else if (users[0].age <= 18){
+    console.log(`${users[0].name} is a minor.`);
+} else{
+    console.log(`no age input`);
+}
+
