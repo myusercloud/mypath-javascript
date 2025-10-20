@@ -124,3 +124,29 @@ console.log(greet("lucas", "JavaScript"));
 const greetUser = (name, age) => `hello, ${name}, you are ${age} years old.`;//arrow function
 console.log(greetUser("Sarah", 28));
 
+const checkAge = (age) => {
+    if(age >= 18) return "You are an adult.";
+    return "You are a minor.";
+}
+
+console.log(checkAge(20));
+
+//exercise: summation function
+
+const sum = (x, y) => x + y;
+
+console.log("Sum of 5 and 10 is:", sum(5, 10));
+
+//exercise; check if even or odd
+
+const isEven = (x) => {
+    if (x % 2 === 0) {
+        return `${x} is even.`;
+    } else {
+        return `${x} is odd.`;
+    }
+}
+
+console.log(isEven(7));
+console.log(isEven(12));
+
