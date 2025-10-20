@@ -34,3 +34,45 @@ do{
 
 
 //array forEach method example
+//for each
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(num => {
+    console.log(num * 2)
+})
+
+//map method example - returns a new array
+const nums = [1, 2, 3, 4, 5];
+const squared = numbers.map(num => num * num);
+console.log(squared); 
+
+const users = [
+    { name: "John", age: 28 },
+    { name: "Jane", age: 32 },
+    { name: "Mike", age: 25 }
+];
+
+const names = users.map(u => u.name);
+console.log(names);
+
+//filter method example - returns a new array
+const ages = [12, 17, 22, 30, 15, 18];
+const adults = ages.filter(age => age >= 18);
+const children = ages.filter(age => age < 18);
+console.log(children);
+console.log(adults);
+
+//reduce method example - reduces array to a single value
+const values = [10, 20, 30, 40, 50];
+const sum = values.reduce((acc, val) => acc + val, 0);
+console.log(sum);
+
+
+//object destrtucturing
+const user1 = {
+    name: 'Harry',
+    age: 20,
+    country: 'Kenya'
+}
+
+const {name, age} = user1;
+console.log(`Name: ${name}, Age: ${age}`);
