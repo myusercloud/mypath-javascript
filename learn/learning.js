@@ -115,3 +115,12 @@ if(users[0].age >= 18){
 
 //functions
 
+function greet (name, language){
+    return `Hello ${name}! Welcome to the ${language} world.`;
+}
+
+console.log(greet("lucas", "JavaScript"));
+
+const greetUser = (name, age) => `hello, ${name}, you are ${age} years old.`;//arrow function
+console.log(greetUser("Sarah", 28));
+
