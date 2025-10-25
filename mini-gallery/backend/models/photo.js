@@ -5,3 +5,8 @@ const photoSchema = new mongoose.Schema({
     description: {type: String},
     imageUrl: {type: String, required: true},
 }, {timestamps: true});
+
+
+const Photo = mongoose.model('Photo', photoSchema);
+
+export default Photo;
