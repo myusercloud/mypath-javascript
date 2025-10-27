@@ -20,8 +20,8 @@ const upload = multer({ storage });
 
 // ✅ Routes
 router.get("/", getPhotos);
-router.post("/", upload.single("file"), addPhoto);     // be consistent: 'file' or 'image'
-router.put("/:id", upload.single("file"), updatePhoto);
+router.post("/", upload.single("image"), addPhoto);     // be consistent: 'file' or 'image'
+router.put("/:id", upload.single("image"), updatePhoto);
 router.delete("/:id", deletePhoto);
 
 export default router;
