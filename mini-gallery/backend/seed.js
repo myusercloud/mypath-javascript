@@ -5,8 +5,9 @@ import Photo from "./models/photo.js";
 
 dotenv.config();
 
-const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/mini_gallery";
 
+const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/mini_gallery";
+//seed data
 mongoose
   .connect(mongoURI)
   .then(() => console.log("✅ Connected to MongoDB"))
